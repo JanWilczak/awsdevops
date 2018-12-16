@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region us-west-2 --no-include-email)
-      - IMAGE_TAG=${}
+      
   build:
     commands:
       - echo Build started on `date`
