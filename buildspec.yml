@@ -6,7 +6,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region us-west-2 --no-include-email)
-      
+      - REPOSITORY_URI=766845206390.dkr.ecr.us-west-2.amazonaws.com/devopstest
   build:
     commands:
       - echo Build started on `date`
