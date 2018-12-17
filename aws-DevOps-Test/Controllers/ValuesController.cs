@@ -14,7 +14,9 @@ namespace aws_DevOps_Test.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+
             return new string[] { "jan-test-tutaj", "jaskiteam" };
+
         }
 
         // GET api/values/5
