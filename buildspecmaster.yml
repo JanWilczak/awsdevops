@@ -24,4 +24,5 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"dev-ops-test","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
-    files: imagedefinitions.json
+    files: 
+        -deploy/imagedefinitions.json
